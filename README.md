@@ -1,5 +1,54 @@
 # ApeChatBot
-Sure, here's an example README file that combines all three scripts:
+
+
+# PDF Trainer
+
+PDF Trainer is a Python package that extracts text from PDF files and trains machine learning models to classify the extracted text.
+
+## Installation
+
+You can install PDF Trainer using pip:
+
+```
+pip install pdftrainer
+```
+
+## Usage
+
+Here's an example of how to use PDF Trainer to extract text from a PDF file and train a machine learning model:
+
+```python
+from pdftrainer.extractor import PDFTextExtractor
+from pdftrainer.processor import TextProcessor
+from pdftrainer.trainer import ModelTrainer
+
+# Extract text from PDF files
+extractor = PDFTextExtractor()
+texts = extractor.extract_texts(["path/to/file1.pdf", "path/to/file2.pdf"])
+
+# Process extracted text data
+processor = TextProcessor()
+processed_texts = processor.process_texts(texts)
+
+# Train a machine learning model
+trainer = ModelTrainer(model_path="path/to/model")
+trainer.train(processed_texts)
+trainer.save_model()
+```
+
+See the documentation for more detailed usage instructions.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc.
 
 # PDF Text Extraction and Processing
 
