@@ -6,7 +6,62 @@ PDF Trainer is built on top of some popular Python libraries, such as PyPDF2 and
 
 PDF Trainer can be useful for anyone who needs to work with PDF files and wants to extract text and use it for machine learning tasks. It can be particularly useful for researchers, developers, and data scientists who work with large volumes of PDF files and need to automate text extraction and classification tasks.
 
+# Here are some usage examples:
 
+Example 1: Extracting text from a single PDF file and training a model
+
+```
+from pdf_trainer import PDFTrainer
+
+# Create a PDFTrainer object
+trainer = PDFTrainer()
+
+# Extract text from a single PDF file
+pdf_file = 'path/to/your/pdf/file.pdf'
+text = trainer.extract_text(pdf_file)
+
+# Train a model on the extracted text
+labels = ['positive', 'negative']
+data = [('This is a positive review.', 'positive'),
+        ('This is a negative review.', 'negative')]
+trainer.train(text, labels, data)
+```
+
+Example 2: Extracting text from multiple PDF files and training a model
+
+```
+from pdf_trainer import PDFTrainer
+
+# Create a PDFTrainer object
+trainer = PDFTrainer()
+
+# Extract text from multiple PDF files
+pdf_dir = 'path/to/your/pdf/directory'
+text = trainer.extract_text(pdf_dir)
+
+# Train a model on the extracted text
+labels = ['positive', 'negative']
+data = [('This is a positive review.', 'positive'),
+        ('This is a negative review.', 'negative')]
+trainer.train(text, labels, data)
+```
+
+Example 3: Using a pre-trained model to classify new text
+
+```
+from pdf_trainer import PDFTrainer
+
+# Load a pre-trained model
+model_file = 'path/to/your/model/file.pkl'
+trainer = PDFTrainer.load(model_file)
+
+# Classify new text
+text = 'This is a new document that needs to be classified.'
+label = trainer.predict(text)
+print(label)
+```
+
+These examples are just a starting point, and you can modify them to fit your specific use case. I hope this helps!
 
 ## Installation
 
