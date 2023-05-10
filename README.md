@@ -126,4 +126,4 @@ Explain how others can contribute to your project. Include guidelines for submit
 
 ## License
 
-This project is licensed under the MIT License
+This project is licensed under the MIT License - see the LICENSE file for details.e
