@@ -1,9 +1,12 @@
-# ApeChatBot
-
-
 # PDF Trainer
 
-PDF Trainer is a Python package that extracts text from PDF files and trains machine learning models to classify the extracted text.
+PDF Trainer an interesting package that combines text extraction and machine learning for PDF files. With PDF Trainer, you can extract text from PDF files and use it to train a machine learning model for text classification. This can be useful in many applications, such as document classification, sentiment analysis, and information extraction.
+
+PDF Trainer is built on top of some popular Python libraries, such as PyPDF2 and scikit-learn, which makes it easy to use and extend. PyPDF2 is a library for working with PDF files in Python, and scikit-learn is a popular machine learning library that provides a wide range of algorithms for text classification.
+
+PDF Trainer can be useful for anyone who needs to work with PDF files and wants to extract text and use it for machine learning tasks. It can be particularly useful for researchers, developers, and data scientists who work with large volumes of PDF files and need to automate text extraction and classification tasks.
+
+
 
 ## Installation
 
